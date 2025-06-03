@@ -1,5 +1,3 @@
-import os
-
 def mostra_linha():
 
     print('-' * 50)
@@ -19,7 +17,6 @@ while True:
 
     match codigo:
         case 1:
-            os.system('cls')
             nome_usuario = input("Para iniciarmos seu cadastro digite seu nome: ")
             lista_de_nomes.append(nome_usuario)
             print("Muito bem, você foi cadastrado no nosso programa.")
@@ -28,7 +25,6 @@ while True:
             mostra_linha()
 
         case 2:
-            os.system('cls')
             nome_remover = input("Digite o nome do aluno que deseja remover da turma: ")
             lista_de_nomes.remove(nome_remover)
             print("Muito bem, o aluno foi removido:")
@@ -37,13 +33,11 @@ while True:
             mostra_linha()
 
         case 3:
-            os.system('cls')
             print("Até o momento, as pessoas cadastradas na sua turma são:", lista_de_nomes)
             
             mostra_linha()
 
         case 4:
-            os.system('cls')
             print("Fechando o programa...")
            
             mostra_linha()           
